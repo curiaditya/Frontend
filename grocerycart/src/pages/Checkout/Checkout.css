@@ -1,0 +1,78 @@
+.checkout{
+    display: flex;
+    gap: 4rem ;
+}
+
+.checkout-card{
+    padding: 1rem 1.5rem;
+    flex: 45%;
+    height: 400px;
+}
+.checkout-address-card{
+    flex: 45% ;  
+}
+.checkout-card h4{
+    margin-top: 1rem;
+}
+.checkout-addresses{
+    box-shadow: rgb(14 14 14 / 24%) 0px 3px 6px;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.checkout-addresses p{
+    margin-bottom: 4px;
+}
+.checkout-card h4{
+    margin-bottom: 0.7rem;
+}
+.purchased-product{
+    width: 200px;
+}
+.checkout-card p{ 
+    margin-bottom: 7px;
+}
+.order-billing,
+.purchased-items,
+.selected-address {
+    padding: 0.5rem;
+}
+.order-billing p{
+    display: flex;
+    justify-content: space-between;
+}
+.order-btn{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(253, 251, 247, 0.45) 0px 0px 0px 1.3px, rgb(155, 4, 111) 0px 0px 0px 1px;
+    color: rgb(253, 251, 247);
+    background-color: rgb(172, 41, 134);
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.order-btn:disabled{
+    background-color:#e1dfdf;
+    cursor: none;
+    box-shadow: none;
+    color: rgba(57, 56, 56, 1);
+}
+.subTotal-price{
+    color:rgba(57, 56, 56, 1);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+    .checkout{
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 0;
+        flex-direction: column;
+    }
+    .checkout-card{
+        padding: 0;
+    }
+}

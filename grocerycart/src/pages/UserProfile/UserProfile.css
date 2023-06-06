@@ -1,0 +1,67 @@
+.user-profile{
+    width: 45rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(230, 229, 229, 0.16) 0px 1px 0px;
+    background: rgba(255,255,255,0.6);
+}
+.tab-header{
+    width: 45rem;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.6); 
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.user-profile--links{
+display: flex;
+justify-content: space-around;
+}
+.user-profile--link{
+    text-decoration: none;
+    color: #000;
+}
+.logout-btn{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background-color: #ac2986;
+    border-radius: 5px;
+    color: #fff;
+    cursor:pointer;
+}
+.user-profile--links li {
+    flex:50%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.user-profile--links li a{
+    color:rgba(0, 0, 0, 1)
+}
+.active-link {
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(172, 41, 134);
+     
+}
+.active-link a{
+    color: rgb(253, 251, 247); 
+}
+@media (min-width: 320px) and (max-width: 600px){
+.tab-header {
+width: 100%;
+}
+.user-profile--links li {
+    padding: 0.8rem;
+}
+.user-profile{
+    width: 100%;
+}
+}

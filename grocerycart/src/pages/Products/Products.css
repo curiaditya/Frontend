@@ -1,0 +1,112 @@
+.product-card-container{
+display: flex;
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+
+.product_card{
+    width: 260px;
+    margin: 0  0.8rem 1.8rem 0.8rem;
+    position: relative;
+    box-shadow: rgb(14 14 14 / 14%) 0px 3px 7px;
+    border-radius: 13px;
+    
+}
+.product_card img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.product_card--text{
+   background-color: rgb(253, 251, 247);
+   padding: 20px;
+   text-align: center;
+   border-bottom-left-radius: 13px;
+   border-bottom-right-radius: 13px;
+}
+.product-card--title{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 6px;
+    height: 2.5rem;
+    letter-spacing: 0.9px;
+}
+.product_card:hover .product-card--title{
+    text-decoration: underline;
+}
+.cart-btn{
+    padding: 10px 15px;
+    margin: 10px 0 0px 0;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f7f0d9;
+    font-size: 15px;
+}
+.cart-btn:hover{
+    background-color:  #52524f;
+}
+.product-ratings{
+    background: rgb(0,128,0);
+    color: #fff;
+    padding: 3px 9px;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-right: 7px;
+	position: absolute;
+    bottom: 10rem;
+    z-index: 10;
+    right: 0;
+}
+.fa.fa-thin.fa-star{
+    color: #fff;
+    font-size: 9px;
+  padding-left: 5px;
+}
+.wishlist-btn{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+.wishlist-btn i {
+    color: #877f7f;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+   /* color: rgb(214, 17, 17); */
+    margin-right: 11px;
+}
+.wishlist-btn i.active {
+    color: rgb(228, 75, 75);
+    transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+    .product_card {
+        margin: 0 1.2rem 2.8rem 1.2rem;
+        flex: 100%
+    }
+    .wishlist-btn i {
+        margin-right: 21px;
+        font-size: 27px;
+    }
+    .product-card--title {
+        font-size: 19px;
+        letter-spacing: 0.9px;
+        }
+    .product-ratings {
+        font-size: 13px;
+        margin-right: 12px;
+        bottom: 10.2rem;
+    }
+    .products-section h2 {
+        padding: 0 1.4rem;
+    }
+    
+    }
+

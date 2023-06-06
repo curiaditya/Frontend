@@ -1,0 +1,125 @@
+.navbar {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: baseline;
+}
+
+.list-items {
+    padding: 0 10px;
+}
+
+.shop-link {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+.fa {
+    color: #000;
+    font-size: 20px;
+}
+
+.search-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.nav-icon {
+    position: relative;
+}
+
+.list-items span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(172, 41, 134);
+    color: #fff;
+    top: 3.3rem;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.profile-icon {
+    color: rgb(172, 41, 134) !important;
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .navbar {
+        padding: 2rem 1rem 0 1rem;
+        flex-wrap: wrap;
+    }
+
+    .logo-div {
+        order: 1;
+    }
+
+    .links-div {
+        order: 2;
+    }
+
+    .search-input {
+        order: 3;
+        width: 100%;
+        margin-top: 2.2rem;
+    }
+
+    .search-input input {
+        padding: 14px 18px;
+
+    }
+
+    .list-items span {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2.7rem;
+        font-size: 9px;
+        margin-left: 0.8rem;
+    }
+}
+
+/**media query for tablet**/
+@media(min-width: 768px) {
+    .search-input input {
+        width: 140%;
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+}
+
+/**media query  for desktop**/
+@media(min-width: 1024px) {
+
+    .list-items {
+        padding: 0 20px;
+    }
+
+    .fa {
+        color: #000;
+        font-size: 25px;
+    }
+
+    .search-input input {
+        padding: 12px 20px;
+        width: 180%;
+    }
+
+}
