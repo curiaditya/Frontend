@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url('./assets/images/bg.svg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  overflow: auto;
+  max-height: 105vw;
+}
+
+.chakra-container {
+  transform: scale(0.75);
+  transform-origin: -10vw 20vw;
+}
