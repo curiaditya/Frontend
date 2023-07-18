@@ -1,6 +1,6 @@
+/* eslint-disable eqeqeq */
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { axiosClient } from "../../utils/axiosClient";
-import { setLoading } from "./appConfigSlice";
 
 export const getUserProfile = createAsyncThunk(
     "user/getUserProfile",
@@ -25,7 +25,7 @@ export const likeAndUnlikePost = createAsyncThunk(
             return response.result.post;
         } catch (error) {
             return Promise.reject(error);
-        } 
+        }
     }
 );
 
