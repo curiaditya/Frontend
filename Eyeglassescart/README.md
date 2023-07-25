@@ -8,15 +8,10 @@ It is a platform dedicated to providing a seamless shopping experience for eyewe
 
 ##Features
 1-Home Page
-2-Product Listing Page
-3-Filters
-4-Search
-5-Cart Management
-6-Wishlist Management
-7-User Profile Page
-8-Address Management
-9-Checkout Page
-10-Responsive
-11-Loaders and Toasts
+2-Filters
+3-Search
+4-User Profile Page
+5-Responsive
+6-Loaders and Toasts
 
 ## Link - https://eyeglassescart.netlify.app/
